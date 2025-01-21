@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #DCDCDC;
+    background-color: #dfebf7;
     color: #333;
 }
 
@@ -18,56 +18,84 @@ a {
 
 /* Navbar */
 .navbar {
-    position: fixed;
     top: 0;
     width: 100%;
     background-color: #02012b;
     padding: 20px 0;
     z-index: 1000;
+	text-align:center;
+	align-items: center;
 }
 
-.navbar-container {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-	justify-content: space-between;
+#nav1 {
+	width:45%;
+	height:100%;
 }
 
-.navbar-links {
-    list-style: none;
-    display: flex;
-}
-
-.navbar-links li {
-    margin: 0 10px;
-}
-
-.navbar-links a {
-    color: white;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-.navbar-links a:hover {
-    color: #bba166;
+#nav2 {
+	width:45%;
+	height:100%;
+	margin-left:50%;
+	align-items: center;
+	top:0;
 }
 
 /* Hero */
 .hero {
-    background-image: url('LogoSF.png');
+    background-image: url('foto2.jpg');
     background-size: cover;
     background-position: center;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: left-side;
     align-items: center;
-    color: white;
-    text-align: center;
+    text-align: left-side;
+	opacity: 0.5;
+
 }
 
 .hero-content h1 {
     font-size: 3em;
     margin-bottom: 20px;
+}
+
+.foto{
+	width:50%;
+	float:left;
+}
+
+
+#espaco{
+	width:100%;
+	height:60px;
+	background-color:#000000;
+	
+}
+
+#texto {
+	width:60%;
+	text-align:center;
+	font-family:coursive;
+	margin:0 auto;
+	
+}
+
+#texto2 {
+	width:90%;
+	text-align:center;
+	font-family:coursive;
+	margin:0 auto;
+	font-size:20px;
+	
+}
+
+#texto3 {
+	width:90%;
+	text-align:center;
+	font-family:coursive;
+	margin:0 auto;
+	font-size:20px;
+	
 }
 
 .cta-button {
@@ -102,11 +130,15 @@ h2 {
 
 /* Servicos */
 .servicos {
-    background-color: #d8d8d8;
+    background-color: #46566d;
+	display: flex;
+    flex-wrap: wrap;
 }
 
 .servico-item {
     margin-bottom: 20px;
+	display: flex;
+    flex-wrap: wrap;
 }
 
 /* Portfólio */
@@ -141,6 +173,7 @@ button {
 }
 
 /* Footer */
+
 .footer {
     text-align: center;
     padding: 20px;
@@ -148,30 +181,110 @@ button {
     color: #bba166;
 }
 
-#depoimentos .depoimentos-lista {
+.meutrabalho {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      height: auto;
+    }
+
+.content, .image {
+      flex: 1;
+      min-width: 300px; /* Para manter as divs legíveis em telas pequenas */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+}
+
+
+.image img {
+    max-width: 100%;
+    height: auto;
+	border-radius:5;
+}
+
+
+#comoajudar {
   display: flex;
   gap: 5px;
   justify-content: space-between;
 }
 
-#depoimentos .depoimento {
-  padding: 5px;
-  border-radius: 8px;
-  flex: 1;
-  text-align:center;
-  font-family: Georgia, serif;
+.dep{
+	  width: 100%;
+      margin: 0 auto;
 }
 
-.hero2 {
-    background-image: url('Benef.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
+.carrossel {
+      width: 100%;
+      max-width: 800px;
+      overflow: hidden;
+      position: relative;
+	  margin: 0 auto;
+    }
+
+    .depoimentos {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .depoimento {
+      flex: 0 0 100%;
+      opacity: 0.5;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      background-color: #46566d;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transform: scale(0.9);
+      transition: opacity 0.5s, transform 0.5s;
+	  font-family: Georgia, serif;
+	  color:#f8f8f8;
+ 
+    }
+
+    .depoimento.central {
+      opacity: 1;
+      transform: scale(1);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .nome {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #bba166;
+    }
+
+    .botoes {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .botao {
+      padding: 10px 20px;
+      font-size: 1rem;
+      color: #02012b;
+      background-color: #bba166;
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .botao:hover {
+      background-color: #46566d;
+    }
+
+@media (max-width: 768px) {
+  .portfolio-gallery {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+
 }
 
 .whatsappButton {
