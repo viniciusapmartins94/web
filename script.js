@@ -24,4 +24,18 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   atualizarCarrossel();
+ 
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const toggleButtons = document.querySelectorAll('.toggle-button');
+
+  toggleButtons.forEach((button) => {
+    const content = button.nextElementSibling;
+
+    button.addEventListener('click', () => {
+      const isOpen = button.classList.toggle('active');
+      content.style.maxHeight = isOpen ? content.scrollHeight + 'px' : '0';
+    });
+  });
 });
