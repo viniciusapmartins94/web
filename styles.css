@@ -40,7 +40,7 @@ a {
 
 /* Hero */
 .hero {
-    background-image: url('foto2.jpg');
+    background-image: url('Foto.1_Inicial.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -48,7 +48,7 @@ a {
     justify-content: left-side;
     align-items: center;
     text-align: left-side;
-	opacity: 0.5;
+	
 
 }
 
@@ -80,7 +80,7 @@ a {
 
 #texto2 {
 	width:90%;
-	text-align:center;
+	text-align:left;
 	font-family:coursive;
 	margin:0 auto;
 	font-size:20px;
@@ -119,6 +119,12 @@ section {
 .container {
     width: 80%;
     margin: 0 auto;
+}
+
+.tit {
+    width: 100%;
+	text-align:left;
+    
 }
 
 h2 {
@@ -221,6 +227,7 @@ button {
     }
     .content2 p {
       margin: 10px 0;
+	  padding: 0 10px;
     }
 
 
