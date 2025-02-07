@@ -107,9 +107,24 @@ a {
     cursor: pointer;
     transition: background-color 0.3s;
 	margin: 0 auto;
+	text-align:center;
 }
 
 .cta-button:hover {
+    background-color: #bba166;
+}
+
+.cta-button2 {
+    padding: 10px 20px;
+    background-color: #02012b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button2:hover {
     background-color: #bba166;
 }
 
