@@ -40,7 +40,7 @@ a {
 
 /* Hero */
 .hero {
-    background-image: url('Foto.1_Inicial.png');
+    background-image: url('Foto2. Inicial.png');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -97,13 +97,16 @@ a {
 }
 
 .cta-button {
-    padding: 10px 20px;
+	max-width:160px;
+	display: flex;
+    padding: 10px 10px;
     background-color: #02012b;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+	margin: 0 auto;
 }
 
 .cta-button:hover {
@@ -342,6 +345,18 @@ button {
     flex-direction: column;
     gap: 10px;
   }
+
+ .hero{
+	background-image: url('foto_principal_media_800x800.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: left-side;
+    align-items: center;
+    text-align: left-side;
+	 
+ }
   
 
 }
